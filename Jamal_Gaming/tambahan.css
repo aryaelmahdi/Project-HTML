@@ -1,0 +1,102 @@
+        .slider {
+            margin-top: 10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        
+        .slider h4 {
+            margin-top: 20%;
+        }
+        
+        .slides {
+            display: flex;
+            width: 50rem;
+            overflow: hidden;
+            align-items: center;
+        }
+        
+        .slide {
+            width: 50rem;
+            transition: .5s;
+        }
+        
+        .choose_1:checked~.slides>.s1 {
+            margin-left: 0rem;
+        }
+        
+        .choose_2:checked~.slides>.s1 {
+            margin-left: -55rem;
+        }
+        
+        .title-p {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .game {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 25%;
+        }
+        
+        .link {
+            font-size: 15pt;
+        }
+        
+        .games img {
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        .link a {
+            color: black;
+        }
+        
+        .link a:hover {
+            color: aqua;
+        }
+        
+        .about {
+            display: grid;
+            justify-content: center;
+            margin-top: 10%;
+            font-size: 15pt;
+            margin-bottom: 20%;
+        }
+        
+        .card {
+            background-color: var(--blue);
+            padding: 5%;
+            border-radius: 10px;
+            box-shadow: 20px 20px black;
+        }
+        
+        .card h1 {
+            text-align: center;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        footer {
+            display: grid;
+            justify-content: center;
+            background-color: blue;
+            margin-top: 10%;
+            padding: 2%;
+        }
+        
+        .contact img {
+            width: 50px;
+        }
+        
+        #copyright {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .title span {
+            font-style: italic;
+        }
