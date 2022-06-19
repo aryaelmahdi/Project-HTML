@@ -388,15 +388,12 @@ function sbmt2() {
     let userid = document.getElementById("uiddd").value;
     console.log(userid.length);
 
-    var bgcolor = "rgb(139, 192, 253)";
-    // console.log(bgcolor);
-
     let tet = document.getElementsByClassName("border-pilihan");
     console.log(tet)
     try {
-        if (uname.length || userid.length >= 4) {
+        if (uname.length && userid.length >= 4) {
             var pilihan = document.getElementsByClassName("border-pilihan")
-            for (i = 0; i <= pilihan.length; i++) {
+            for (i = 0; i < 8; i++) {
                 if (pilihan[i].style.backgroundColor == "rgb(139, 192, 253)") {
                     var pilihan2 = document.getElementsByClassName("wkwk");
                     for (x = 0; x <= pilihan2.length; x++) {
@@ -406,7 +403,7 @@ function sbmt2() {
                     }
                 }
             }
-            alert("Choose Your VP")
+            alert("Please Insert Your Data Correctly");
 
         } else {
             alert("Please Insert Your Data Correctly");
