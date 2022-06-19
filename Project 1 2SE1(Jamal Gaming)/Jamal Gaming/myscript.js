@@ -373,3 +373,46 @@ function gopay() {
         document.getElementById("gopayy").style.backgroundColor = "aliceblue";
     }
 }
+
+
+function sbmt() {
+    var pilihan = document.getElementsByClassName("border-pilihan")
+    console.log(pilihan);
+    location.assign("home.html");
+}
+
+function sbmt2() {
+    let uname = document.getElementById("namaaa").value;
+    console.log(uname.length);
+
+    let userid = document.getElementById("uiddd").value;
+    console.log(userid.length);
+
+    var bgcolor = "rgb(139, 192, 253)";
+    // console.log(bgcolor);
+
+    let tet = document.getElementsByClassName("border-pilihan");
+    console.log(tet)
+    try {
+        if (uname.length || userid.length >= 4) {
+            var pilihan = document.getElementsByClassName("border-pilihan")
+            for (i = 0; i <= pilihan.length; i++) {
+                if (pilihan[i].style.backgroundColor == "rgb(139, 192, 253)") {
+                    var pilihan2 = document.getElementsByClassName("wkwk");
+                    for (x = 0; x <= pilihan2.length; x++) {
+                        if (pilihan2[x].style.backgroundColor == "rgb(139, 192, 253)") {
+                            location.assign("home.html");
+                        }
+                    }
+                }
+            }
+            alert("Choose Your VP")
+
+        } else {
+            alert("Please Insert Your Data Correctly");
+        }
+
+    } catch (error) {
+        console.error(error);
+    }
+}
